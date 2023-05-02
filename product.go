@@ -15,16 +15,18 @@ func arraySign(nums []int) int {
 
     product := 1
 
-    for i:=0;i<len(nums);i++ {
-        product *= nums[i]
+    for i:=0; i<len(nums); i++ {
+        if (nums[i] == 0) {
+            return 0
+        }
+        if (nums[i] < 0){
+            product *=-1
+        }
     }
 
-    if (product > 0){
+    if (product > 0) {
         return 1
-    } else if (product < 0){
+    } else  {
         return -1
-    } else {
-        return 0
     }
 }
-
