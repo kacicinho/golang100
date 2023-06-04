@@ -32,6 +32,9 @@
 
         queue = append(queue, node1.Left, node2.Left, node1.Right, node2.Right)
 
+
+
+		c := 0
     }
 }
 
