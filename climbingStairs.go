@@ -18,6 +18,8 @@ func climbStairs(n int) int {
     way := make([]int, n+1)
     way[1], way[2] = 1, 2
 
+    
+
     for i:=3; i<=n; i++ {
         way[i] = way[i-1] + way[i-2] 
     }
